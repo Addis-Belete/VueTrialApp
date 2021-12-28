@@ -10,9 +10,9 @@ var app = new Vue({
 var app2 = new Vue({
 	el: "#app-2",
 	data: {
-		seen: true
+		message: 'You loaded this page on ' + new Date().toLocaleString()
+
 	}
 
 })
 app.message = 'Hello Again'
-app2.seen = false
