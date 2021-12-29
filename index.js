@@ -49,5 +49,12 @@ var app6 = new Vue({
 	}
 
 })
+Vue.component('todo-item', {
+	tempelate: '<li>This is a todo</li>'
+
+})
+var app7 = new Vue({
+	el: "#app-7"
+})
 
 app.message = 'Hello Again'
