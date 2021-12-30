@@ -11,9 +11,7 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="(item, index) in items">
-          {{parentMessage}} - {{index}} - {{item.message}}
-        </li>
+        <li v-for="(value, name) of objects">{{name}}: {{value}}</li>
       </ul>
     </div>
 
