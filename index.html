@@ -10,8 +10,11 @@
   </head>
   <body>
     <div id="app">
-      <h1 v-if="awesome">Vue is Awesome!</h1>
-      <h1 v-else>Oh No!</h1>
+      <ul>
+        <li v-for="(item, index) in items">
+          {{parentMessage}} - {{index}} - {{item.message}}
+        </li>
+      </ul>
     </div>
 
     <script src="index.js"></script>

@@ -2,9 +2,14 @@
 var vm = new Vue({
 	el: "#app",
 	data: {
-		awesome: true,
+		parentMessage: "Parent",
+		items: [
+			{ message: 'Foo' },
+			{ message: 'Bar' }
+		]
 
 	}
 
 })
 
+vm.awesome = false
