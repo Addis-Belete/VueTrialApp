@@ -1,11 +1,21 @@
 
-Vue.component('todo-item', {
-	template: '<li>This is a todo</li>'
+var vm = new Vue({
+	el: "#app",
+	data: {
+		firstName: "Foo",
+		lastName: "Bar",
+		fullName: "Foo Bar",
+	},
+	watch: {
+		firstName: function (val) {
+			this.fullName = val + ' ' + this.lastName
+		},
+		lastName: function (val) {
+			this.fullName = this.firstName + ' ' + val
+		}
+
+	}
 
 })
-
-var app = new Vue({
-	el: "#app"
-
-
-})
+vm.firstName = 'Addis'
+vm.lastName = "Belete"
