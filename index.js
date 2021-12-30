@@ -2,16 +2,17 @@
 var vm = new Vue({
 	el: "#app",
 	data: {
-		parentMessage: "Parent",
-		objects: {
-			title: "addis",
-			author: "Bejiga",
-			Published: "elelete"
+		counter: 0,
 
-		}
+	},
 
-	}
+
+
 
 })
 
-vm.awesome = false
+vm.items.push({ message: "Hello" })
+vm.items = vm.items.filter(function (item) {
+	return item.message.match(/Foo/)
+
+})
